@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 50px;
+  font-family: "Poppins";
+  align-items: center;
+  position: relative;
+}
+.navbar .background {
+  width: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -3;
+  background-color: rgb(188, 0, 22);
+}
+.navbar-title {
+  font-size: 32px;
+  font-family: "DynaPuff";
+}
+.navbar-title p {
+  font-size: 32px;
+}
+.navbar-title p span:nth-child(1) {
+  color: rgb(188, 0, 22);
+}
+.navbar-title p span:nth-child(2) {
+  color: #ffc736;
+}
+.navbar-menu {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: -50px;
+}
+.navbar-menu a {
+  text-decoration: none;
+}
+.navbar-menu a:nth-child(1) {
+  font-weight: 500;
+  color: rgb(188, 0, 22);
+}
+.navbar-menu a:nth-child(2) {
+  font-weight: 500;
+  color: white;
+}
+.navbar-tel {
+  color: white;
+}
+.navbar-tel i {
+  background-color: black;
+  color: white;
+  padding: 4px;
+  border-radius: 15px 15px 0 15px;
+  transform: scale();
+}
+.navbar-tel i:hover {
+  transform: scale(1.1);
+  transition: ease-in 0.3s;
+}
+
+.banner {
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.banner .background {
+  width: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -3;
+  background-color: rgb(188, 0, 22);
+}
+.banner-left {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: start;
+}
+.banner-left button {
+  background-color: rgb(188, 0, 22);
+  color: white;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 15px;
+}
+.banner-middle {
+  width: 33%;
+  position: relative;
+}
+.banner-middle span {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  font-weight: 600;
+  padding: 3px 6px;
+  border-radius: 30px;
+  background-color: #ffc736;
+}
+.banner-middle img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: scale();
+}
+.banner-middle img:hover {
+  transform: scale(1.1);
+  transition: ease-in 0.3s;
+}
+.banner-right {
+  width: 33%;
+  text-align: end;
+}
+.banner-right h1 {
+  color: #ffc736;
+  font-weight: 600;
+  font-family: "Poppins";
+}
+
+.product {
+  padding: 20px 50px;
+  border-top: 5px solid black;
+}
+.product-title {
+  text-align: center;
+}
+.product-title h1 {
+  color: rgb(188, 0, 22);
+}
+.product-title span {
+  font-family: "DynaPuff";
+}
+.products {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
+.products-card {
+  width: 280px;
+  text-align: center;
+  border-radius: 40px 40px 0px 0px;
+  margin: auto;
+  box-shadow: 2px 2px 5px grey;
+  margin-bottom: 10px;
+  transform: scale();
+}
+.products-card:hover {
+  transform: scale(1.1);
+  transition: ease-in 0.3s;
+}
+.products-card img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  text-overflow: ellipsis;
+  background-color: rgb(188, 0, 22);
+  border-radius: 40px 40px 0px 0px;
+}
+.products-card p {
+  margin: 10px 0;
+}
+.products-card-content {
+  display: flex;
+  justify-content: space-around;
+}
+.products-card-content span {
+  font-weight: 600;
+  padding: 3px 6px;
+  border-radius: 30px;
+  background-color: #ffc736;
+}
+.products-card-order i {
+  background-color: black;
+  color: white;
+  padding: 4px;
+  border-radius: 15px 15px 0 15px;
+  transform: scale();
+  color: white;
+}
+.products-card-order i:hover {
+  transform: scale(1.1);
+  transition: ease-in 0.3s;
+}
+.products-card-order button {
+  background-color: rgb(188, 0, 22);
+  color: white;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 15px;
+}
+
+.order {
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+  border-top: 5px solid black;
+}
+.order-card {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 2px 2px 9px black;
+  overflow-x: hidden;
+  transform: rotate(5deg);
+}
+.order-card-left {
+  background-color: rgb(188, 0, 22);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 65%;
+  align-items: start;
+  padding: 0 0 15px 15px;
+}
+.order-card-left h3 {
+  color: white;
+}
+.order-card-left button {
+  background-color: rgb(188, 0, 22);
+  color: white;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 15px;
+  background-color: white;
+  color: rgb(188, 0, 22);
+}
+.order-card-right {
+  width: 35%;
+  background-color: #ffc736;
+}
+.order-card-right img {
+  width: 300px;
+}
+
+.social {
+  width: 100%;
+  border-top: 5px solid black;
+  padding: 20px 50px;
+}
+.social-title {
+  text-align: center;
+  color: rgb(188, 0, 22);
+  font-family: "Poppins";
+}
+.social-card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 20px;
+}
+.social-cards {
+  flex: 1 1 220px;
+}
+.social-card img {
+  width: 100px;
+}
+
+.footer {
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  border-top: 5px solid black;
+}
+.footer li {
+  list-style-type: none;
+}
+.footer-title {
+  font-size: 32px;
+  font-size: 32px;
+  font-family: "DynaPuff";
+  text-align: center;
+}
+.footer-title p {
+  font-size: 32px;
+}
+.footer-title p span:nth-child(1) {
+  color: rgb(188, 0, 22);
+}
+.footer-title p span:nth-child(2) {
+  color: #ffc736;
+}
+.footer-title ul {
+  display: flex;
+  gap: 10px;
+}
+.footer-title ul li {
+  font-size: 15px;
+}
+.footer-menu {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer-menu ul {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+}
+.footer li:nth-child(1) {
+  font-weight: 700;
+}
+.footer li:nth-child(1):hover {
+  color: rgb(188, 0, 22);
+}/*# sourceMappingURL=style.css.map */
